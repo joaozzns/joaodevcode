@@ -506,6 +506,33 @@ section {
     position: relative;
     z-index: 2;
     transition: var(--transition);
+    animation: stepFlow 4s ease-in-out infinite;
+}
+
+.process-step:nth-child(1) .step-number { animation-delay: 0s; }
+.process-step:nth-child(2) .step-number { animation-delay: 1s; }
+.process-step:nth-child(3) .step-number { animation-delay: 2s; }
+.process-step:nth-child(4) .step-number { animation-delay: 3s; }
+
+@keyframes stepFlow {
+    0%, 100% {
+        background: var(--bg3);
+        color: var(--gray);
+        border-color: var(--border);
+        box-shadow: none;
+    }
+    12% {
+        background: var(--red);
+        color: var(--white);
+        border-color: var(--red);
+        box-shadow: 0 0 25px rgba(230, 57, 70, 0.7);
+    }
+    30% {
+        background: var(--bg3);
+        color: var(--gray);
+        border-color: var(--border);
+        box-shadow: none;
+    }
 }
 
 .step-number.active {
@@ -876,7 +903,7 @@ section {
     }
 
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 1.85rem;
     }
 
     .process-grid {
