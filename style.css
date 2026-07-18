@@ -256,6 +256,10 @@ section {
     align-items: center;
 }
 
+#hero .container {
+    width: 100%;
+}
+
 .hero-badge {
     display: inline-flex;
     align-items: center;
