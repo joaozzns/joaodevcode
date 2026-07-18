@@ -184,14 +184,14 @@ section {
 }
 
 .logo {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--white);
+    display: inline-flex;
+    align-items: center;
 }
 
-.logo span {
-    color: var(--red);
+.logo img {
+    height: 38px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
